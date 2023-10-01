@@ -9,31 +9,39 @@ int main(){
     cin >> studentName;
     cout << "What was your overall grade?" << endl;
     int mark;
+    char grade;
     cin >> mark;
     if (mark =< 39){
         grade == 'F';
-    }
-    else if (mark =>40 and =<59){
+    } else if (mark =>40 and =<49){
         grade == 'E';
+    } else if (mark =>50 and =<59){
+        grade == 'D';
+    } else if (mark =>60 and =<69){
+        grade == 'C';
+    } else if (mark =>70 and =<79){
+        grade == 'B';
+    } else if (mark =>80 and =<100){
+        grade == 'A';
     }
 
     switch (mark) {
-        case F:
+        case 'F':
         cout << "Name: " + studentName + "\n" + "Mark: " + std::to_string(mark) + "\n" + "Grade: F";
 	            break;
-	    case E:
+	    case 'E':
         cout << "Name: " + studentName + "\n" + "Mark: " + std::to_string(mark) + "\n" + "Grade: E";
 	            break;
-        case D:
+        case 'D':
         cout << "Name: " + studentName + "\n" + "Mark: " + std::to_string(mark) + "\n" + "Grade: D";
 	            break;
-	    case C:
+	    case 'C':
         cout << "Name: " + studentName + "\n" + "Mark: " + std::to_string(mark) + "\n" + "Grade: C";
 	            break;
-        case B:
+        case 'B':
         cout << "Name: " + studentName + "\n" + "Mark: " + std::to_string(mark) + "\n" + "Grade: B";
 	            break;
-	    case A:
+	    case 'A':
         cout << "Name: " + studentName + "\n" + "Mark: " + std::to_string(mark) + "\n" + "Grade: A";
 	            break;
         default:
