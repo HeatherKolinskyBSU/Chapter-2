@@ -11,21 +11,21 @@ int main(){
     int mark;
     char grade;
     cin >> mark;
-    if (mark =< 39){
-        grade == 'F';
-    } else if (mark =>40 and =<49){
-        grade == 'E';
-    } else if (mark =>50 and =<59){
-        grade == 'D';
-    } else if (mark =>60 and =<69){
-        grade == 'C';
-    } else if (mark =>70 and =<79){
-        grade == 'B';
-    } else if (mark =>80 and =<100){
-        grade == 'A';
+    if (mark <= 40){
+        grade = 'F';
+    } else if (mark >= 40 and mark <= 49){
+        grade = 'E';
+    } else if (mark >= 49 and mark <= 59){
+        grade = 'D';
+    } else if (mark >= 59 and mark <= 69){
+        grade = 'C';
+    } else if (mark >= 69 and mark <= 79){
+        grade = 'B';
+    } else if (mark >= 79 and mark <= 100){
+        grade = 'A';
     }
 
-    switch (mark) {
+    switch (grade) {
         case 'F':
         cout << "Name: " + studentName + "\n" + "Mark: " + std::to_string(mark) + "\n" + "Grade: F";
 	            break;
@@ -44,8 +44,6 @@ int main(){
 	    case 'A':
         cout << "Name: " + studentName + "\n" + "Mark: " + std::to_string(mark) + "\n" + "Grade: A";
 	            break;
-        default:
-            cout << "That input was not recognised" << endl;
     return 0;
     }
 }
